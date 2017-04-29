@@ -9,6 +9,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <style>
+
+
+    /*-----------*/
+    /*NAV BAR CSS*/
+    /*-----------*/
     @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
     body {
         font-family: "Open Sans", Helvetica, sans-serif;
@@ -107,13 +112,7 @@
         background-color: white;
         height: 1px !important;
     }
-    .big-search-bar{
-
-    }
     @media (max-width: 967px) {
-        .big-search-bar {
-            display: none !important;
-        }
         .navbar-header {
             float: none;
         }
@@ -134,24 +133,43 @@
         .navbar-collapse.collapse {
             display: none!important;
         }
-        .navbar-nav {
-            float: none!important;
-            margin-top: 7.5px;
-        }
         .navbar-nav>li {
             float: none;
-        }
-        .navbar-nav>li>a {
-            padding-top: 10px;
-            padding-bottom: 10px;
         }
         .collapse.in{
             display:block !important;
         }
+        .navbar-nav{
+            margin: 0 !important;
+        }
     }
 
+
+    /*-----------------*/
+    /*HOT COMPANIES CSS*/
+    /*-----------------*/
+
+    .hot-companies-card{
+        box-shadow: 0 2px 7px 0 rgba(0,0,0,0.12);
+        padding-left: 45px;
+        padding-right: 45px;
+        width: 265px;
+    }
+    h1{
+        font-size: 20px;
+        color: #53575A;
+        padding-top: 45px;
+    }
+    .hot-companies-icon{
+        width: 41px;
+        height: 41px;
+    }
 </style>
 <body style="background-color: #F4F4F4;">
+
+/*------------------------------*/
+/*-----------NAV BAR------------*/
+/*------------------------------*/
 <nav class="navbar navbar-fixed-top official-navbar" role="navigation">
     <div>
             <div class="navbar-header">
@@ -208,5 +226,27 @@
 
 
 </nav>
+
+/*------------------------------*/
+/*--------HOT COMPANIES---------*/
+/*------------------------------*/
+<div style="padding-top: 200px; padding-left: 100px;">
+    <div class="hot-companies-card">
+        <h1>
+            Hot Companies
+        </h1>
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="facebook.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="google.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="airbnb.png">
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
