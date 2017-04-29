@@ -153,16 +153,35 @@
         box-shadow: 0 2px 7px 0 rgba(0,0,0,0.12);
         padding-left: 45px;
         padding-right: 45px;
-        width: 265px;
+        width: 230px;
+        background-color: white;
     }
     h1{
-        font-size: 20px;
+        font-size: 16px;
         color: #53575A;
         padding-top: 45px;
+        padding-bottom: 10px;
+        margin: 0;
     }
     .hot-companies-icon{
-        width: 41px;
-        height: 41px;
+        width: 100%;
+        height: auto;
+    }
+    .hot-companies-icon:hover{
+        cursor: pointer;
+    }
+    .hot-companies-icons-row{
+        padding-top: 15px;
+    }
+    a.default-link{
+        font-size: 12px;
+        font-weight: 600 !important;
+        color: #3691A8;
+        display: block!important;
+    }
+    .bottom-of-card-link{
+        padding-bottom: 45px;
+        padding-top: 25px;
     }
 </style>
 <body style="background-color: #F4F4F4;">
@@ -235,7 +254,7 @@
         <h1>
             Hot Companies
         </h1>
-        <div class="row">
+        <div class="row hot-companies-icons-row">
             <div class="col-xs-4">
                 <img class="hot-companies-icon" src="facebook.png">
             </div>
@@ -246,6 +265,40 @@
                 <img class="hot-companies-icon" src="airbnb.png">
             </div>
         </div>
+        <div class="row hot-companies-icons-row">
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="microsoft.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="uber.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="twitter.png">
+            </div>
+        </div>
+        <div class="row hot-companies-icons-row">
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="amazon.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="stripe.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="snap.png">
+            </div>
+        </div>
+        <div class="row hot-companies-icons-row">
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="apple.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="linkedin.png">
+            </div>
+            <div class="col-xs-4">
+                <img class="hot-companies-icon" src="palantir.png">
+            </div>
+        </div>
+        <a class="default-link bottom-of-card-link">+ More</a>
     </div>
 </div>
 </body>
