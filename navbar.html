@@ -53,7 +53,7 @@
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 13px;
-        opacity: .25;
+        opacity: .3;
         text-transform: uppercase;
     }
     .nav>li>a:focus, .nav>li>a:hover{
@@ -78,6 +78,22 @@
         font-size: 14px;
         border-left: 1px solid rgba(255,255,255,0.14);
         width: 400px;
+    }
+    .big-search-bar > ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: white;
+        opacity: .3;
+    }
+    .big-search-bar > ::-moz-placeholder { /* Firefox 19+ */
+        color: white;
+        opacity: .3;
+    }
+    .big-search-bar > :-ms-input-placeholder { /* IE 10+ */
+        color: white;
+        opacity: .3;
+    }
+    .big-search-bar > :-moz-placeholder { /* Firefox 18- */
+        color: white;
+        opacity: .3;
     }
     .active{
         border-bottom: 2px solid white;
@@ -149,12 +165,14 @@
     /*HOT COMPANIES CSS*/
     /*-----------------*/
 
-    .hot-companies-card{
+    .card{
         box-shadow: 0 2px 7px 0 rgba(0,0,0,0.12);
         padding-left: 45px;
         padding-right: 45px;
-        width: 230px;
         background-color: white;
+    }
+    .hot-companies-card{
+        width: 230px;
     }
     h1{
         font-size: 16px;
@@ -187,10 +205,86 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-    .hot-companies-card > .row{
+    .card > .row{
         margin-left: -10px;
         margin-right: -10px;
     }
+
+    /*------------*/
+    /*TRENDING CSS*/
+    /*------------*/
+
+    h2{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .line-divider{
+        height: 1px;
+        background-color: #DCE0E0;
+        width: 550px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .add-your-experience-divider{
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+    .trending-card{
+        width: 640px;
+    }
+
+    .trending-card-input{
+        line-height: 69px;
+        color: #D3D3D3;
+    }
+    .first-experience-line{
+        color: #B1B1B1;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+    }
+    .company-info{
+        color: #B1B1B1;
+        font-weight: 700;
+    }
+
+    .position-info{
+        color: #B1B1B1;
+        font-weight: 400;
+    }
+    .tiny-company-icon{
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .upvote-btn{
+        width: 73px;
+        height: 28px;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);
+        color: #FF6376;
+        font-weight: 700;
+
+
+    }
+
+    .upvote-btn-line{
+        margin-top: 6px;
+        margin-bottom: 6px;
+        height: 16px;
+        width: 1px;
+        background-color: #DDDDDD;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .fa-arrow-circle-o-up{
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+
 </style>
 <body style="background-color: #F4F4F4;">
 
@@ -258,7 +352,7 @@
 /*--------HOT COMPANIES---------*/
 /*------------------------------*/
 <div style="padding-top: 200px; padding-left: 100px;">
-    <div class="hot-companies-card">
+    <div class="card hot-companies-card">
         <h1>
             Hot Companies
         </h1>
@@ -308,6 +402,25 @@
         </div>
         <a class="default-link bottom-of-card-link">More</a>
     </div>
+    <div style="height: 100px;"></div>
+    <div class="card trending-card">
+        <h1 style="margin-bottom: 15px;">
+            Trending
+        </h1>
+        <div class="line-divider add-your-experience-divider"></div>
+        <h2 class="trending-card-input">Add your experience...</h2>
+        <div class="line-divider add-your-experience-divider" style="margin-bottom: 40px !important;"></div>
+        <div class="first-experience-line">
+            <div>
+                <img class="tiny-company-icon" src="facebook.png"><a class="company-info">Facebook</a>  ·  <a class="position-info">Software Engineering Internship</a>
+            </div>
+            <a class="upvote-btn text-center">
+                <i class="fa fa-arrow-circle-o-up"></i>&nbsp <div class="upvote-btn-line"></div> <span>&nbsp+ 10</span>
+            </a>
+        </div>
+        <div style="height: 1000px;"></div>
+    </div>
+    <div style="height: 300px;"></div>
 </div>
 </body>
 </html>
